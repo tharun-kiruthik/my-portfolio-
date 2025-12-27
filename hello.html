@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tharun's Portfolio</title>
+<style>
+    /* Basic Reset */
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+
+    body { background: #f4f4f9; color: #333; }
+
+    header {
+        background: #4a90e2;
+        color: white;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    header h1 { font-size: 2.5em; }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+        gap: 20px;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+
+    nav a:hover { color: #ffdd59; }
+
+    section { padding: 50px 20px; max-width: 1200px; margin: auto; }
+
+    .about, .projects, .contact { margin-bottom: 50px; }
+
+    .projects-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+    }
+
+    .project-card {
+        background: white;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        transition: transform 0.3s;
+    }
+
+    .project-card:hover { transform: translateY(-10px); }
+
+    footer {
+        text-align: center;
+        padding: 20px;
+        background: #333;
+        color: white;
+    }
+
+    @media(max-width: 600px){
+        header h1 { font-size: 2em; }
+        nav { flex-direction: column; gap: 10px; }
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Tharun Kiruthik</h1>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section id="about" class="about">
+    <h2>About Me</h2>
+    <p>Hello! I'm Tharun, a passionate web developer creating interactive and responsive websites with modern design principles. I love experimenting with CSS animations and clean UI designs.</p>
+</section>
+
+<section id="projects" class="projects">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+        <div class="project-card">
+            <h3>Portfolio Website</h3>
+            <p>A responsive portfolio showcasing my skills, projects, and contact information.</p>
+        </div>
+        <div class="project-card">
+            <h3>Music Player UI</h3>
+            <p>A static music player interface with cool CSS hover effects and interactions.</p>
+        </div>
+        <div class="project-card">
+            <h3>Blog Platform</h3>
+            <p>A modern blogging platform with custom themes and responsive design.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <p>Email: tharun@example.com</p>
+    <p>Phone: +91 1234567890</p>
+</section>
+
+<footer>
+    <p>&copy; 2025 Tharun Kiruthik. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
